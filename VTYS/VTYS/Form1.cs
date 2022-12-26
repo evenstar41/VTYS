@@ -52,5 +52,11 @@ namespace VTYS
             katilimci_Guncelle katilimci_Guncelleme = new katilimci_Guncelle();
             katilimci_Guncelleme.ShowDialog();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MailSending ms = new MailSending();
+            ms.Show();
+        }
     }
 }
