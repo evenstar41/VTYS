@@ -7,6 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using System.Data.Sql;
+using System.ComponentModel.Design;
+
 
 namespace VTYS
 {
@@ -16,25 +20,37 @@ namespace VTYS
         {
             InitializeComponent();
         }
-
         void ekle()
         {
-            //string adi, soyadi, telefon, eposta;
-            //adi = txtAdi.Text;
-            //soyadi = txtSoyadi.Text;
-            //telefon = txtTelefon.Text;
-            //eposta = txtEposta.Text;
+            string BaglantiAdresi = "Data Source = DESKTOP-2BLE3N6; Initial Catalog = egitim; Integrated Security = True;";
+            SqlConnection Baglanti = new SqlConnection();
+            Baglanti.ConnectionString = BaglantiAdresi;        //Örnek sql e bağlanıp açma şekli
+            Baglanti.Open();
 
-            //string sql = "INSERT INTO tblmusteri(ADI, SOYADI, EPOSTA, TELEFON)" +
-            //      " VALUES('" + adi + "','" + soyadi + "','" + telefon + "','" + eposta + "')";
+            string sql = "INSERT INTO OGRENCI(TC, AD, SOYAD, DOGUM_IL_ID, DOGUM_YERI, DOGUM_TRH, EMAIL, TELEFON, UNVAN_ID)" +
+                  " VALUES(@TC, @AD, @SOYAD, @DOGUM_IL_ID, @DOGUM_YERI, @DOGUM_TRH, @EMAIL, @TELEFON, @UNVAN_ID)";
+            SqlCommand commandAdd = new SqlCommand(sql, Baglanti);
+
+            commandAdd.Parameters.AddWithValue("@TC", txt_tc.Text); // Örnek veritabanına ekleme şekli
+            commandAdd.Parameters.AddWithValue("@AD", txt_ad.Text);
+            commandAdd.Parameters.AddWithValue("@SOYAD", txt_soyad.Text);
+            commandAdd.Parameters.AddWithValue("@DOGUM_IL_ID", int.Parse(txt_dogumIlId.Text));
+            commandAdd.Parameters.AddWithValue("@DOGUM_YERI", txt_dogumYeri.Text);
+            commandAdd.Parameters.AddWithValue("@DOGUM_TRH", datetime_DogumTarihi.Value);
+            commandAdd.Parameters.AddWithValue("@EMAIL", txt_email.Text);
+            commandAdd.Parameters.AddWithValue("@TELEFON", txt_telefon.Text);
+            commandAdd.Parameters.AddWithValue("@UNVAN_ID", int.Parse(txt_unvanId.Text));
+            commandAdd.ExecuteNonQuery();
+            Baglanti.Close();
 
         }
         private void btn_Ekle_Click(object sender, EventArgs e)
         {
-            if (txt_kimlikId.Text != null)
+
+            if (txt_tc.Text != null || txt_ad.Text != null || txt_soyad.Text != null || txt_telefon.Text != null)
             {
-                lbl_Uyari.Text = "Kimlik ID boş bırakılamaz !";
-                if (txt_kimlikId.Text != "")
+                lbl_Uyari.Text = "* işareti olan alanlar boş bırakılamaz !";
+                if (txt_tc.Text != "" || txt_ad.Text != "" || txt_soyad.Text != "" || txt_telefon.Text != "")
                 {
                     lbl_Uyari.Text = "Kayıt Başarılı.";
                     ekle();
@@ -45,6 +61,7 @@ namespace VTYS
                 lbl_Uyari.Text = "Kayıt Başarılı.";
                 ekle();
             }
+
         }
 
     }
