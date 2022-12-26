@@ -52,6 +52,7 @@ namespace VTYS
             this.lbl_ad = new System.Windows.Forms.Label();
             this.lbl_kimlikId = new System.Windows.Forms.Label();
             this.datetime_DogumTarihiUpdate = new System.Windows.Forms.DateTimePicker();
+            this.btn_bul = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbl_Uyari
@@ -61,7 +62,7 @@ namespace VTYS
             this.lbl_Uyari.ForeColor = System.Drawing.Color.Red;
             this.lbl_Uyari.Location = new System.Drawing.Point(586, 444);
             this.lbl_Uyari.Name = "lbl_Uyari";
-            this.lbl_Uyari.Size = new System.Drawing.Size(0, 32);
+            this.lbl_Uyari.Size = new System.Drawing.Size(0, 31);
             this.lbl_Uyari.TabIndex = 45;
             // 
             // btn_guncelle
@@ -73,6 +74,7 @@ namespace VTYS
             this.btn_guncelle.TabIndex = 44;
             this.btn_guncelle.Text = "GÜNCELLE";
             this.btn_guncelle.UseVisualStyleBackColor = true;
+            this.btn_guncelle.Click += new System.EventHandler(this.btn_guncelle_Click);
             // 
             // label1
             // 
@@ -90,7 +92,7 @@ namespace VTYS
             this.lbl_tc.AutoSize = true;
             this.lbl_tc.Location = new System.Drawing.Point(139, 119);
             this.lbl_tc.Name = "lbl_tc";
-            this.lbl_tc.Size = new System.Drawing.Size(30, 17);
+            this.lbl_tc.Size = new System.Drawing.Size(28, 16);
             this.lbl_tc.TabIndex = 42;
             this.lbl_tc.Text = "TC:";
             // 
@@ -99,7 +101,7 @@ namespace VTYS
             this.lbl_unvanId.AutoSize = true;
             this.lbl_unvanId.Location = new System.Drawing.Point(94, 497);
             this.lbl_unvanId.Name = "lbl_unvanId";
-            this.lbl_unvanId.Size = new System.Drawing.Size(70, 17);
+            this.lbl_unvanId.Size = new System.Drawing.Size(65, 16);
             this.lbl_unvanId.TabIndex = 41;
             this.lbl_unvanId.Text = "Unvan ID:";
             // 
@@ -169,6 +171,7 @@ namespace VTYS
             // 
             // txt_kimlikId
             // 
+            this.txt_kimlikId.Enabled = false;
             this.txt_kimlikId.Location = new System.Drawing.Point(185, 71);
             this.txt_kimlikId.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_kimlikId.Name = "txt_kimlikId";
@@ -180,7 +183,7 @@ namespace VTYS
             this.lbl_telefon.AutoSize = true;
             this.lbl_telefon.Location = new System.Drawing.Point(105, 450);
             this.lbl_telefon.Name = "lbl_telefon";
-            this.lbl_telefon.Size = new System.Drawing.Size(60, 17);
+            this.lbl_telefon.Size = new System.Drawing.Size(56, 16);
             this.lbl_telefon.TabIndex = 30;
             this.lbl_telefon.Text = "Telefon:";
             // 
@@ -189,7 +192,7 @@ namespace VTYS
             this.lbl_email.AutoSize = true;
             this.lbl_email.Location = new System.Drawing.Point(117, 400);
             this.lbl_email.Name = "lbl_email";
-            this.lbl_email.Size = new System.Drawing.Size(46, 17);
+            this.lbl_email.Size = new System.Drawing.Size(44, 16);
             this.lbl_email.TabIndex = 29;
             this.lbl_email.Text = "Email:";
             // 
@@ -198,7 +201,7 @@ namespace VTYS
             this.lbl_dogumTarihi.AutoSize = true;
             this.lbl_dogumTarihi.Location = new System.Drawing.Point(65, 349);
             this.lbl_dogumTarihi.Name = "lbl_dogumTarihi";
-            this.lbl_dogumTarihi.Size = new System.Drawing.Size(97, 17);
+            this.lbl_dogumTarihi.Size = new System.Drawing.Size(91, 16);
             this.lbl_dogumTarihi.TabIndex = 28;
             this.lbl_dogumTarihi.Text = "Doğum Tarihi:";
             // 
@@ -207,7 +210,7 @@ namespace VTYS
             this.lbl_dogumYeri.AutoSize = true;
             this.lbl_dogumYeri.Location = new System.Drawing.Point(76, 296);
             this.lbl_dogumYeri.Name = "lbl_dogumYeri";
-            this.lbl_dogumYeri.Size = new System.Drawing.Size(86, 17);
+            this.lbl_dogumYeri.Size = new System.Drawing.Size(81, 16);
             this.lbl_dogumYeri.TabIndex = 27;
             this.lbl_dogumYeri.Text = "Doğum Yeri:";
             // 
@@ -216,7 +219,7 @@ namespace VTYS
             this.lbl_dogumIlId.AutoSize = true;
             this.lbl_dogumIlId.Location = new System.Drawing.Point(76, 248);
             this.lbl_dogumIlId.Name = "lbl_dogumIlId";
-            this.lbl_dogumIlId.Size = new System.Drawing.Size(82, 17);
+            this.lbl_dogumIlId.Size = new System.Drawing.Size(77, 16);
             this.lbl_dogumIlId.TabIndex = 26;
             this.lbl_dogumIlId.Text = "Doğum İl İd:";
             // 
@@ -225,7 +228,7 @@ namespace VTYS
             this.lbl_soyad.AutoSize = true;
             this.lbl_soyad.Location = new System.Drawing.Point(113, 203);
             this.lbl_soyad.Name = "lbl_soyad";
-            this.lbl_soyad.Size = new System.Drawing.Size(52, 17);
+            this.lbl_soyad.Size = new System.Drawing.Size(50, 16);
             this.lbl_soyad.TabIndex = 25;
             this.lbl_soyad.Text = "Soyad:";
             // 
@@ -234,7 +237,7 @@ namespace VTYS
             this.lbl_ad.AutoSize = true;
             this.lbl_ad.Location = new System.Drawing.Point(135, 162);
             this.lbl_ad.Name = "lbl_ad";
-            this.lbl_ad.Size = new System.Drawing.Size(29, 17);
+            this.lbl_ad.Size = new System.Drawing.Size(27, 16);
             this.lbl_ad.TabIndex = 24;
             this.lbl_ad.Text = "Ad:";
             // 
@@ -243,7 +246,7 @@ namespace VTYS
             this.lbl_kimlikId.AutoSize = true;
             this.lbl_kimlikId.Location = new System.Drawing.Point(94, 71);
             this.lbl_kimlikId.Name = "lbl_kimlikId";
-            this.lbl_kimlikId.Size = new System.Drawing.Size(65, 17);
+            this.lbl_kimlikId.Size = new System.Drawing.Size(61, 16);
             this.lbl_kimlikId.TabIndex = 23;
             this.lbl_kimlikId.Text = "Kimlik ID:";
             // 
@@ -254,11 +257,22 @@ namespace VTYS
             this.datetime_DogumTarihiUpdate.Size = new System.Drawing.Size(229, 22);
             this.datetime_DogumTarihiUpdate.TabIndex = 85;
             // 
+            // btn_bul
+            // 
+            this.btn_bul.Location = new System.Drawing.Point(435, 112);
+            this.btn_bul.Name = "btn_bul";
+            this.btn_bul.Size = new System.Drawing.Size(46, 31);
+            this.btn_bul.TabIndex = 87;
+            this.btn_bul.Text = "Bul";
+            this.btn_bul.UseVisualStyleBackColor = true;
+            this.btn_bul.Click += new System.EventHandler(this.btn_bul_Click);
+            // 
             // katilimci_Guncelle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1467, 745);
+            this.Controls.Add(this.btn_bul);
             this.Controls.Add(this.datetime_DogumTarihiUpdate);
             this.Controls.Add(this.lbl_Uyari);
             this.Controls.Add(this.btn_guncelle);
@@ -314,5 +328,6 @@ namespace VTYS
         private System.Windows.Forms.Label lbl_ad;
         private System.Windows.Forms.Label lbl_kimlikId;
         private System.Windows.Forms.DateTimePicker datetime_DogumTarihiUpdate;
+        private System.Windows.Forms.Button btn_bul;
     }
 }

@@ -26,13 +26,13 @@ namespace VTYS
 
         void katilimciGoruntle()
         {
-            //conn = new SqlConnection("Data Source=.;Initial Catalog=dbRehber;Integrated Security=True");
-            //adapter = new SqlDataAdapter("SELECT *FROM Kisiler", conn);
-            //tablo = new DataTable();
-            //conn.Open();
-            //adapter.Fill(tablo);
-            //dataGridView1.DataSource = tablo;
-            //conn.Close();
+            conn = new SqlConnection("Data Source = DESKTOP-2BLE3N6; Initial Catalog = egitim; Integrated Security = True;");
+            adapter = new SqlDataAdapter("SELECT *FROM OGRENCI", conn);
+            tablo = new DataTable();
+            conn.Open();
+            adapter.Fill(tablo);
+            dataGridView1.DataSource = tablo;
+            conn.Close();
         }
         private void katilimci_Goruntule_Load(object sender, EventArgs e)
         {

@@ -14,20 +14,37 @@ C:\Users\H.EMİRLEYLEK\Source\Repos\VTYS\VTYS\obj\Debug\VTYS.egitim_Goruntule.re
 C:\Users\H.EMİRLEYLEK\Source\Repos\VTYS\VTYS\obj\Debug\VTYS.katilimci_Goruntule.resources
 C:\Users\H.EMİRLEYLEK\Source\Repos\VTYS\VTYS\obj\Debug\VTYS.egitim_Guncelleme.resources
 C:\Users\H.EMİRLEYLEK\Source\Repos\VTYS\VTYS\obj\Debug\VTYS.katilimci_Guncelle.resources
-C:\Users\ferdi\Desktop\3.Sınıf\VERI TABANI PROJE\VTYS\VTYS\bin\Debug\VTYS.exe.config
-C:\Users\ferdi\Desktop\3.Sınıf\VERI TABANI PROJE\VTYS\VTYS\bin\Debug\VTYS.exe
-C:\Users\ferdi\Desktop\3.Sınıf\VERI TABANI PROJE\VTYS\VTYS\bin\Debug\VTYS.pdb
-C:\Users\ferdi\Desktop\3.Sınıf\VERI TABANI PROJE\VTYS\VTYS\obj\Debug\VTYS.csprojAssemblyReference.cache
-C:\Users\ferdi\Desktop\3.Sınıf\VERI TABANI PROJE\VTYS\VTYS\obj\Debug\VTYS.egitim_Ekle.resources
-C:\Users\ferdi\Desktop\3.Sınıf\VERI TABANI PROJE\VTYS\VTYS\obj\Debug\VTYS.egitim_Goruntule.resources
-C:\Users\ferdi\Desktop\3.Sınıf\VERI TABANI PROJE\VTYS\VTYS\obj\Debug\VTYS.egitim_Guncelleme.resources
-C:\Users\ferdi\Desktop\3.Sınıf\VERI TABANI PROJE\VTYS\VTYS\obj\Debug\VTYS.Form1.resources
-C:\Users\ferdi\Desktop\3.Sınıf\VERI TABANI PROJE\VTYS\VTYS\obj\Debug\VTYS.katilimci_Ekle.resources
-C:\Users\ferdi\Desktop\3.Sınıf\VERI TABANI PROJE\VTYS\VTYS\obj\Debug\VTYS.katilimci_Goruntule.resources
-C:\Users\ferdi\Desktop\3.Sınıf\VERI TABANI PROJE\VTYS\VTYS\obj\Debug\VTYS.katilimci_Guncelle.resources
-C:\Users\ferdi\Desktop\3.Sınıf\VERI TABANI PROJE\VTYS\VTYS\obj\Debug\VTYS.MailSending.resources
-C:\Users\ferdi\Desktop\3.Sınıf\VERI TABANI PROJE\VTYS\VTYS\obj\Debug\VTYS.Properties.Resources.resources
-C:\Users\ferdi\Desktop\3.Sınıf\VERI TABANI PROJE\VTYS\VTYS\obj\Debug\VTYS.csproj.GenerateResource.cache
-C:\Users\ferdi\Desktop\3.Sınıf\VERI TABANI PROJE\VTYS\VTYS\obj\Debug\VTYS.csproj.CoreCompileInputs.cache
-C:\Users\ferdi\Desktop\3.Sınıf\VERI TABANI PROJE\VTYS\VTYS\obj\Debug\VTYS.exe
-C:\Users\ferdi\Desktop\3.Sınıf\VERI TABANI PROJE\VTYS\VTYS\obj\Debug\VTYS.pdb
+C:\vtysproject\VTYS\VTYS\VTYS\bin\Debug\VTYS.exe.config
+C:\vtysproject\VTYS\VTYS\VTYS\bin\Debug\VTYS.exe
+C:\vtysproject\VTYS\VTYS\VTYS\bin\Debug\VTYS.pdb
+C:\vtysproject\VTYS\VTYS\VTYS\obj\Debug\VTYS.csproj.AssemblyReference.cache
+C:\vtysproject\VTYS\VTYS\VTYS\obj\Debug\VTYS.csproj.SuggestedBindingRedirects.cache
+C:\vtysproject\VTYS\VTYS\VTYS\obj\Debug\VTYS.egitim_Ekle.resources
+C:\vtysproject\VTYS\VTYS\VTYS\obj\Debug\VTYS.egitim_Goruntule.resources
+C:\vtysproject\VTYS\VTYS\VTYS\obj\Debug\VTYS.egitim_Guncelleme.resources
+C:\vtysproject\VTYS\VTYS\VTYS\obj\Debug\VTYS.Form1.resources
+C:\vtysproject\VTYS\VTYS\VTYS\obj\Debug\VTYS.katilimci_Ekle.resources
+C:\vtysproject\VTYS\VTYS\VTYS\obj\Debug\VTYS.katilimci_Goruntule.resources
+C:\vtysproject\VTYS\VTYS\VTYS\obj\Debug\VTYS.katilimci_Guncelle.resources
+C:\vtysproject\VTYS\VTYS\VTYS\obj\Debug\VTYS.Properties.Resources.resources
+C:\vtysproject\VTYS\VTYS\VTYS\obj\Debug\VTYS.csproj.GenerateResource.cache
+C:\vtysproject\VTYS\VTYS\VTYS\obj\Debug\VTYS.csproj.CoreCompileInputs.cache
+C:\vtysproject\VTYS\VTYS\VTYS\obj\Debug\VTYS.exe
+C:\vtysproject\VTYS\VTYS\VTYS\obj\Debug\VTYS.pdb
+C:\Users\ferdi\Desktop\VTYS-emre\VTYS\VTYS\obj\Debug\VTYS.csprojAssemblyReference.cache
+C:\Users\ferdi\Desktop\VTYS-emre\VTYS\VTYS\obj\Debug\VTYS.egitim_Ekle.resources
+C:\Users\ferdi\Desktop\VTYS-emre\VTYS\VTYS\obj\Debug\VTYS.egitim_Goruntule.resources
+C:\Users\ferdi\Desktop\VTYS-emre\VTYS\VTYS\obj\Debug\VTYS.egitim_Guncelleme.resources
+C:\Users\ferdi\Desktop\VTYS-emre\VTYS\VTYS\obj\Debug\VTYS.Form1.resources
+C:\Users\ferdi\Desktop\VTYS-emre\VTYS\VTYS\obj\Debug\VTYS.katilimci_Ekle.resources
+C:\Users\ferdi\Desktop\VTYS-emre\VTYS\VTYS\obj\Debug\VTYS.katilimci_Goruntule.resources
+C:\Users\ferdi\Desktop\VTYS-emre\VTYS\VTYS\obj\Debug\VTYS.katilimci_Guncelle.resources
+C:\Users\ferdi\Desktop\VTYS-emre\VTYS\VTYS\obj\Debug\VTYS.MailSending.resources
+C:\Users\ferdi\Desktop\VTYS-emre\VTYS\VTYS\obj\Debug\VTYS.Properties.Resources.resources
+C:\Users\ferdi\Desktop\VTYS-emre\VTYS\VTYS\obj\Debug\VTYS.csproj.GenerateResource.cache
+C:\Users\ferdi\Desktop\VTYS-emre\VTYS\VTYS\obj\Debug\VTYS.csproj.CoreCompileInputs.cache
+C:\Users\ferdi\Desktop\VTYS-emre\VTYS\VTYS\obj\Debug\VTYS.exe
+C:\Users\ferdi\Desktop\VTYS-emre\VTYS\VTYS\obj\Debug\VTYS.pdb
+C:\Users\ferdi\Desktop\VTYS-emre\VTYS\VTYS\bin\Debug\VTYS.exe.config
+C:\Users\ferdi\Desktop\VTYS-emre\VTYS\VTYS\bin\Debug\VTYS.exe
+C:\Users\ferdi\Desktop\VTYS-emre\VTYS\VTYS\bin\Debug\VTYS.pdb
