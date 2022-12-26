@@ -8,10 +8,11 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>VTYS</RootNamespace>
     <AssemblyName>VTYS</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -88,6 +89,12 @@
     <Compile Include="katilimci_Guncelle.Designer.cs">
       <DependentUpon>katilimci_Guncelle.cs</DependentUpon>
     </Compile>
+    <Compile Include="MailSending.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MailSending.Designer.cs">
+      <DependentUpon>MailSending.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="egitim_Ekle.resx">
@@ -111,6 +118,9 @@
     <EmbeddedResource Include="katilimci_Guncelle.resx">
       <DependentUpon>katilimci_Guncelle.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MailSending.resx">
+      <DependentUpon>MailSending.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -119,6 +129,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

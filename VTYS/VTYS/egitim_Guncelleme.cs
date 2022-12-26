@@ -23,5 +23,10 @@ namespace VTYS
         {
 
         }
+
+        private void egitim_Guncelleme_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
