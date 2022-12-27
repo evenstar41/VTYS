@@ -30,7 +30,7 @@ namespace VTYS
 
             Baglanti.Open();
             string sorgu = "UPDATE OGRENCI SET TC=@TC, AD=@AD, SOYAD=@SOYAD, DOGUM_IL_ID=@DOGUM_IL_ID, DOGUM_YERI=@DOGUM_YERI, " +
-                "DOGUM_TRH=@DOGUM_TRH, EMAIL=@EMAIL, TELEFON=@TELEFON, UNVAN_ID=@UNVAN_ID WHERE @TC =" + txt_tc.Text + "";
+                "DOGUM_TRH=@DOGUM_TRH, EMAIL=@EMAIL, TELEFON=@TELEFON, UNVAN_ID=@UNVAN_ID WHERE TC =" + txt_tc.Text + "";
             SqlCommand commandAdd = new SqlCommand(sorgu, Baglanti);
 
             commandAdd.Parameters.AddWithValue("@TC", txt_tc.Text); // Örnek veritabanına ekleme şekli

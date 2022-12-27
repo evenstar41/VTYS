@@ -45,7 +45,7 @@ namespace VTYS
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(44, 9);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(319, 188);
             this.pictureBox1.TabIndex = 0;
@@ -55,7 +55,7 @@ namespace VTYS
             // 
             this.btnEgitimEkle.BackColor = System.Drawing.Color.LightPink;
             this.btnEgitimEkle.Location = new System.Drawing.Point(44, 217);
-            this.btnEgitimEkle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEgitimEkle.Margin = new System.Windows.Forms.Padding(2);
             this.btnEgitimEkle.Name = "btnEgitimEkle";
             this.btnEgitimEkle.Size = new System.Drawing.Size(70, 41);
             this.btnEgitimEkle.TabIndex = 1;
@@ -67,7 +67,7 @@ namespace VTYS
             // 
             this.btnKatilimciEkle.BackColor = System.Drawing.Color.LightPink;
             this.btnKatilimciEkle.Location = new System.Drawing.Point(272, 214);
-            this.btnKatilimciEkle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnKatilimciEkle.Margin = new System.Windows.Forms.Padding(2);
             this.btnKatilimciEkle.Name = "btnKatilimciEkle";
             this.btnKatilimciEkle.Size = new System.Drawing.Size(70, 43);
             this.btnKatilimciEkle.TabIndex = 2;
@@ -79,7 +79,7 @@ namespace VTYS
             // 
             this.btnEgitimGuncelle.BackColor = System.Drawing.Color.LightPink;
             this.btnEgitimGuncelle.Location = new System.Drawing.Point(44, 292);
-            this.btnEgitimGuncelle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEgitimGuncelle.Margin = new System.Windows.Forms.Padding(2);
             this.btnEgitimGuncelle.Name = "btnEgitimGuncelle";
             this.btnEgitimGuncelle.Size = new System.Drawing.Size(70, 41);
             this.btnEgitimGuncelle.TabIndex = 3;
@@ -91,7 +91,7 @@ namespace VTYS
             // 
             this.btnKatilimciGuncelle.BackColor = System.Drawing.Color.LightPink;
             this.btnKatilimciGuncelle.Location = new System.Drawing.Point(272, 290);
-            this.btnKatilimciGuncelle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnKatilimciGuncelle.Margin = new System.Windows.Forms.Padding(2);
             this.btnKatilimciGuncelle.Name = "btnKatilimciGuncelle";
             this.btnKatilimciGuncelle.Size = new System.Drawing.Size(70, 43);
             this.btnKatilimciGuncelle.TabIndex = 4;
@@ -103,7 +103,7 @@ namespace VTYS
             // 
             this.btnEgitimGoruntule.BackColor = System.Drawing.Color.LightPink;
             this.btnEgitimGoruntule.Location = new System.Drawing.Point(44, 375);
-            this.btnEgitimGoruntule.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEgitimGoruntule.Margin = new System.Windows.Forms.Padding(2);
             this.btnEgitimGoruntule.Name = "btnEgitimGoruntule";
             this.btnEgitimGoruntule.Size = new System.Drawing.Size(70, 38);
             this.btnEgitimGoruntule.TabIndex = 5;
@@ -115,7 +115,7 @@ namespace VTYS
             // 
             this.btnKatilimciGoruntule.BackColor = System.Drawing.Color.LightPink;
             this.btnKatilimciGoruntule.Location = new System.Drawing.Point(272, 375);
-            this.btnKatilimciGoruntule.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnKatilimciGoruntule.Margin = new System.Windows.Forms.Padding(2);
             this.btnKatilimciGoruntule.Name = "btnKatilimciGoruntule";
             this.btnKatilimciGoruntule.Size = new System.Drawing.Size(70, 38);
             this.btnKatilimciGoruntule.TabIndex = 6;
@@ -125,13 +125,15 @@ namespace VTYS
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(170, 375);
+            this.button1.BackColor = System.Drawing.Color.LightPink;
+            this.button1.Location = new System.Drawing.Point(161, 375);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Size = new System.Drawing.Size(70, 38);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Toplu Mail Gönder";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // Form1
             // 
@@ -147,9 +149,10 @@ namespace VTYS
             this.Controls.Add(this.btnKatilimciEkle);
             this.Controls.Add(this.btnEgitimEkle);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Anasayfa";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

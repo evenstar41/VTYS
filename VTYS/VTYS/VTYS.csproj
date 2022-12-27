@@ -89,6 +89,7 @@
     <Compile Include="katilimci_Guncelle.Designer.cs">
       <DependentUpon>katilimci_Guncelle.cs</DependentUpon>
     </Compile>
+    <Compile Include="MailGondermeNesnesi.cs" />
     <Compile Include="MailSending.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,7 +143,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
